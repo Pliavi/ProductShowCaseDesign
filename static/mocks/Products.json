@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Teclado Chique Yamaha",
+    "description": "Essa Yamaha não faz Ram dam dam, mas faz barulho!",
+    "image": "teclado.jpg",
+    "price": 148.50,
+    "quantity": 20,
+    "specs":{
+      "Peso": "860 g",
+      "Altura": "280,6 mm",
+      "Largura": "214,9 mm",
+      "Espessura": "5,9 mm",
+      "Resumo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis asperiores dolor sint veniam reprehenderit distinctio aliquid tenetur cumque excepturi voluptatibus quibusdam laudantium quod, doloribus molestiae pariatur architecto est perferendis!"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Smartphone Xiaomi",
+    "description": "Dúvido tu falar Xiaomi três vezes seguidas!",
+    "image": "smartphone.jpg",
+    "price": 2200,
+    "quantity": 6,
+    "specs":{
+      "Peso": "860 g",
+      "Altura": "280,6 mm",
+      "Largura": "214,9 mm",
+      "Espessura": "5,9 mm",
+      "Resumo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis asperiores dolor sint veniam reprehenderit distinctio aliquid tenetur cumque excepturi voluptatibus quibusdam laudantium quod, doloribus molestiae pariatur architecto est perferendis!"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Fone Super Blaster Mondial",
+    "description": "Pensou que a Mondial só fazia eletrodomésticos? Pensou errado!",
+    "image": "fone.jpg",
+    "price": 98.99,
+    "quantity": 2,
+    "specs":{
+      "Peso": "860 g",
+      "Altura": "280,6 mm",
+      "Largura": "214,9 mm",
+      "Espessura": "5,9 mm",
+      "Resumo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis asperiores dolor sint veniam reprehenderit distinctio aliquid tenetur cumque excepturi voluptatibus quibusdam laudantium quod, doloribus molestiae pariatur architecto est perferendis!"
+    }
+  },
+  {
+    "id": 4,
+    "name": "PC",
+    "description": "Lorem ipsum dollor sit amet",
+    "image": "fone.jpg",
+    "price": 4800,
+    "quantity": 0,
+    "specs":{
+      "Peso": "860 g",
+      "Altura": "280,6 mm",
+      "Largura": "214,9 mm",
+      "Espessura": "5,9 mm",
+      "Resumo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis asperiores dolor sint veniam reprehenderit distinctio aliquid tenetur cumque excepturi voluptatibus quibusdam laudantium quod, doloribus molestiae pariatur architecto est perferendis!"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Guitarra",
+    "description": "Lorem ipsum dollor sit amet",
+    "image": "fone.jpg",
+    "price": 1600,
+    "quantity": 50,
+    "specs":{
+      "Peso": "860 g",
+      "Altura": "280,6 mm",
+      "Largura": "214,9 mm",
+      "Espessura": "5,9 mm",
+      "Resumo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis asperiores dolor sint veniam reprehenderit distinctio aliquid tenetur cumque excepturi voluptatibus quibusdam laudantium quod, doloribus molestiae pariatur architecto est perferendis!"
+    }
+  }
+]

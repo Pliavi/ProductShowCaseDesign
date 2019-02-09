@@ -1,17 +1,7 @@
-function html(parts, ...values) {
-  let result = parts[0];
-
-  for (let i = 0; i < values.length; i++) {
-    result += values[i] + parts[i + 1];
-  }
-
-  return result;
-}
-
 export function createCard({ name, description, price, image }) {
   const makePrice = price => price.toFixed(2).replace(".", ",");
 
-  const $card = html`
+  const $card = `
     <div class="card">
       <div class="card-wrapper">
         <h1 class="-title">${name}</h1>

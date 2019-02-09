@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url ProductShowCaseDesign --out-dir docs"
   },
   "devDependencies": {
     "haunted": "^4.0.0-beta.0",

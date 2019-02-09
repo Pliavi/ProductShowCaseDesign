@@ -1,8 +1,24 @@
 body {
-  /* margin: 0; padding: 0; */
   background-color: #5773ee;
   color: #2c2c3c;
   font-family: "Montserrat", sans-serif;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  margin: 10px 0;
+	border-radius: 10px;
+	background-color: transparent;  
+}
+
+.custom-scroll::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: transparent;
 }
 
 header {
@@ -11,30 +27,23 @@ header {
   color: #fff;
   font-weight: bold;
   padding: 24px 64px;
+  align-items: center;
 }
 
 .logo {
-  display: flex;
-  height: 64px;
   padding: 0 16px 0 0;
-  align-items: center;
   font-size: 2rem;
   font-weight: bold;
 }
 
-nav {
-  text-align: right;
-  align-self: center;
-  padding: 8px;
-  padding-right: 0;
-}
 nav > a {
   display: inline-block;
   padding: 8px;
-  margin: 8px;
+  margin: 0 8px;
   text-decoration: none;
   color: #fff;
 }
+
 nav > a:hover{
   text-decoration: wavy;
 }
@@ -52,17 +61,22 @@ nav span.badge {
 }
 
 .cards {
+  display: grid;
   padding: 12px 0;
   text-align: center;
-  perspective: 1000px;
+  grid-template-columns: fit-content(450px) auto;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
   display: inline-block;
-  width: 450px;
   margin: 70px 50px;
   position: relative;
   vertical-align: middle;
+  width: 450px;
 }
 
 .card-wrapper {
@@ -167,17 +181,98 @@ nav span.badge {
   transform-origin: center;
 }
 
-.heart.active {
+.heart.--active {
   animation: 0.5s fav;
 }
 
-.heart.active svg path {
+.heart.--active svg path {
   fill: #e0245e;
   transition: 0.5s fill ease-in-out;
 }
 
 .buy {
   text-align: right;
+}
+
+.search {
+  margin: 0 32px;
+}
+
+.search.--active .-wrapper {
+  width: 100%;
+}
+
+.search .-wrapper {
+  --bar-size: 38px;
+  display: block;
+  background: #fff;
+  border-radius: 25px;
+  padding: 4px;
+  width: var(--bar-size);
+  height: var(--bar-size);
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .25s width;
+  position: relative;
+}
+
+.search .-bar {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 0 16px 0 42px;
+}
+
+.search .-wrapper::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--bar-size);
+  height: var(--bar-size);
+  background: url("../../static/img/icons/search.svg") no-repeat center;
+}
+
+.specs {
+  box-shadow: 0 0 10px #0003;
+  background: #0006;
+  display: inline-block;
+  flex: 1;
+  text-align: left;
+  padding: 20px 20px 20px 40px;
+  margin: 0 0 0 -80px;
+  color: #fff;
+  border-radius: 18px;
+  height: 65%;
+  width: 0;
+  transition: .5s width ease-out;
+  overflow-x: hidden; 
+  overflow-y: scroll;
+} 
+
+.specs table {
+  width: 580px;
+  margin: auto;
+}
+
+.specs table td{
+  padding: 8px;
+}
+
+.specs table td:first-child{
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.specs.--start{
+  width: 580px;
 }
 
 @keyframes fav {

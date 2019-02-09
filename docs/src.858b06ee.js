@@ -5,4 +5,4 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("./components/Card"),t=require("./components/Description"),n=document.querySelector(".cards");function r(){var e=document.querySelector(".search .-bar"),t=document.querySelector(".search");e.addEventListener("focus",function(){return t.classList.add("--active")}),e.addEventListener("blur",function(){return t.classList.remove("--active")});var n=10,r=document.querySelector(".buy-button"),c=document.getElementById("cart-counter");r.addEventListener("click",function(){c.innerText=++n})}n.innerHTML="",fetch("/mocks/Products.json").then(function(e){return e.json()}).then(function(c){var o=c[Math.trunc(3*Math.random())],s=(0,e.createCard)(o),u=(0,t.createSpecs)(o.specs);n.insertAdjacentHTML("beforeend",s),n.insertAdjacentElement("beforeend",u),setTimeout(function(){return u.classList.add("--start")},10),r()});
 },{"./components/Card":"F7ib","./components/Description":"XOYm"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.858b06ee.map
+//# sourceMappingURL=src.858b06ee.map

@@ -1,13 +1,17 @@
 export function createSpecs(specs) {
-  let $specs = document.createElement("table");
+  let $specs = document.createElement("div");
+  let $table = document.createElement("table");
+  $specs.classList = "specs custom-scroll";
 
   for (const specName in specs) {
     const spec = specs[specName];
-    const $row = $specs.insertRow();
+    const $row = $table.insertRow();
 
     $row.insertCell().innerText = specName;
     $row.insertCell().innerText = spec;
   }
+
+  $specs.appendChild($table);
 
   return $specs;
 }

@@ -12,7 +12,7 @@ fetch("./mocks/Products.json")
     const $card = createCard(product);
     const $specs = createSpecs(product.specs);
 
-    $cards.insertAdjacentHTML("beforeend", $card);
+    $cards.insertAdjacentElement("beforeend", $card);
     $cards.insertAdjacentElement("beforeend", $specs);
 
     setTimeout(() => $specs.classList.add("--start"), 10);

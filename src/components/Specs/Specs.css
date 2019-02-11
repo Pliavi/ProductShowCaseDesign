@@ -1,0 +1,35 @@
+
+.specs {
+  box-shadow: 0 0 10px #0003;
+  background: #0006;
+  display: inline-block;
+  flex: 1;
+  text-align: left;
+  padding: 20px 20px 20px 40px;
+  margin: 0 0 0 -80px;
+  color: #fff;
+  border-radius: 18px;
+  height: 65%;
+  width: 0;
+  transition: .5s width ease-out;
+  overflow-x: hidden; 
+  overflow-y: scroll;
+} 
+
+.specs table {
+  width: 580px;
+  margin: auto;
+}
+
+.specs table td{
+  padding: 8px;
+}
+
+.specs table td:first-child{
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.specs.--start{
+  width: 580px;
+}

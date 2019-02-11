@@ -4,12 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --out-dir docs --public-url ."
   },
   "devDependencies": {
-    "haunted": "^4.0.0-beta.0",
-    "lit-html": "^1.0.0",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-static-files-copy": "^2.0.0"
   }

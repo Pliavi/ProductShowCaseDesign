@@ -1,0 +1,84 @@
+.header {
+  display: grid;
+  grid-template-columns: fit-content(200px) auto fit-content(400px);
+  color: #fff;
+  font-weight: bold;
+  padding: 24px 64px;
+  align-items: center;
+}
+
+.header > .logo {
+  padding: 0 16px 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav > .nav-item {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav > .nav-item:hover{
+  text-decoration: wavy;
+}
+
+.nav-item > .badge {
+  display: inline-block;
+  background: #fff5;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-left: 8px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.header > .search {
+  margin: 0 32px;
+}
+
+.header > .search.--active .-wrapper {
+  width: 100%;
+}
+
+.search .-wrapper {
+  --bar-size: 38px;
+  display: block;
+  background: #fff;
+  border-radius: 25px;
+  padding: 4px;
+  width: var(--bar-size);
+  height: var(--bar-size);
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .25s width;
+  position: relative;
+}
+
+.search .-bar {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 0 16px 0 42px;
+}
+
+.search .-wrapper::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--bar-size);
+  height: var(--bar-size);
+  background: url("../../static/img/icons/search.svg") no-repeat center;
+}

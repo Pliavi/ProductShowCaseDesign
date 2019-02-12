@@ -1,7 +1,9 @@
+import "./Specs.css";
+
 export function createSpecs(specs) {
   let $specs = document.createElement("div");
   let $table = document.createElement("table");
-  $specs.classList = "specs custom-scroll";
+  $specs.classList.add("specs");
 
   for (const specName in specs) {
     const spec = specs[specName];

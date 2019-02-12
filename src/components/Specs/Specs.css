@@ -1,24 +1,19 @@
-
 .specs {
   box-shadow: 0 0 10px #0003;
   background: #0006;
-  display: inline-block;
-  flex: 1;
-  text-align: left;
-  padding: 20px 20px 20px 40px;
-  margin: 0 0 0 -80px;
+  padding: 20px;
   color: #fff;
-  border-radius: 18px;
-  height: 65%;
-  width: 0;
-  transition: .5s width ease-out;
+  border-radius: 0 18px 18px 0;
+  margin: 34px 0;
   overflow-x: hidden; 
   overflow-y: scroll;
+  animation: showSpecs .5s forwards;
 } 
 
 .specs table {
   width: 580px;
   margin: auto;
+  text-align: left;
 }
 
 .specs table td{
@@ -30,6 +25,7 @@
   vertical-align: top;
 }
 
-.specs.--start{
-  width: 580px;
+@keyframes showSpecs{
+  from { width:0; }
+  to { width: 580px; }
 }

@@ -1,11 +1,12 @@
-
-
 .card {
-  display: inline-block;
-  margin: 70px 50px;
-  position: relative;
+  display: grid;
+  grid-template-columns: 460px auto;
+  padding: 12px 0;
+  width: 80%;
+  margin: 48px auto;
+  align-items: stretch;
+  justify-content: center;
   vertical-align: middle;
-  width: 450px;
 }
 
 .card-wrapper {
@@ -137,4 +138,3 @@
     transform: scale(1);
   }
 }
-

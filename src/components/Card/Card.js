@@ -1,7 +1,13 @@
-export function createCard({ name, description, price, image }) {
+import { createSpecs } from "./../Specs/Specs";
+import { cartCounter } from "./../../store";
+import "./Card.css";
+
+export function createCard({ name, description, price, image, specs }) {
   const $card = document.createElement("div");
+  const $specs = createSpecs(specs);
   const makePrice = price => price.toFixed(2).replace(".", ",");
 
+  $card.classList.add("card");
   $card.innerHTML = `
     <div class="card-wrapper">
       <h1 class="-title">${name}</h1>
@@ -31,8 +37,12 @@ export function createCard({ name, description, price, image }) {
       </div>
     </div>
   `;
+  $card.append($specs);
 
-  $card.classList.add("card");
+  $card.querySelector(".buy-button").addEventListener("click", () => {
+    cartCounter.dispatch({ type: "INCREMENT" });
+  });
+
   $card
     .querySelector(".heart")
     .addEventListener("click", e =>

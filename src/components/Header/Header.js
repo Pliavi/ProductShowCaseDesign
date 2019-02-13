@@ -6,7 +6,10 @@ export function createHeader() {
 
   $header.classList.add("header");
   $header.innerHTML = `
-    <div class="logo">LOGO</div>
+    <div class="logo">
+      LOGO
+      <div class="hamburguer">|||</div>
+    </div>
     <div class="search">
       <div class="-bar">
         <input type="search" class="-input">
@@ -21,8 +24,14 @@ export function createHeader() {
 
   cartCounter.subscribe($header.querySelector("#cart-counter"));
 
+  const $hamburguer = $header.querySelector(".hamburguer");
+  const $nav = $header.querySelector(".nav");
   const $search = $header.querySelector(".search");
   const $searchInput = $search.querySelector(".-input");
+
+  $hamburguer.addEventListener("click", () => {
+    $nav.classList.toggle("--active");
+  });
 
   $searchInput.addEventListener("focus", () => {
     $search.classList.add("--active");
